@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Fliko/photoGallery/issues"
   },
-  "homepage": "https://github.com/Fliko/photoGallery#readme"
+  "homepage": "https://github.com/Fliko/photoGallery#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
