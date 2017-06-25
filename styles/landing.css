@@ -26,13 +26,13 @@ html, body {
 }
 
 .panel1 {
-  background-image: url("../art/town.jpg");
+  background-image: url("../landingImgs/town.jpg");
 }
 .panel2 {
-  background-image: url("../art/crazy.jpg");
+  background-image: url("../landingImgs/crazy.jpg");
 }
 .panel3 {
-  background-image: url("../art/smoke.jpg");
+  background-image: url("../landingImgs/smoke.jpg");
 }
 panel2 {
   color: white;
