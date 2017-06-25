@@ -5,9 +5,37 @@
   </head>
   <body>
     <div class="panels">
-      <div class="panel panel1"><p>HEY</p></div>
-      <div class="panel panel2"><p>Jaa</p></div>
-      <div class="panel panel3"><p>TYII</p></div>
+      <div class="panel panel1">
+        <p>HEY</p>
+        <a href="/gallery"><p>YO</p></a>
+        <p>whatup</p>
+      </div>
+      <div class="panel panel2">
+        <p>HEY</p>
+        <a href="/about"><p>YO</p></a>
+        <p>whatup</p>
+      </div>
+      <div class="panel panel3">
+        <p>HEY</p>
+        <a href="/all"><p>YO</p></a>
+        <p>whatup</p>
+      </div>
     </div>
+    <script>
+      const panels = document.querySelectorAll('.panel');
+
+      function toggleOpen() {
+        this.classList.toggle('open');
+      }
+
+      function toggleActive(e) {
+        if (e.propertyName.includes('flex')) {
+          this.classList.toggle('open-active');
+        }
+      }
+
+      panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+      panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+    </script>
   </body>
 </html>
