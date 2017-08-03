@@ -12,20 +12,27 @@
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
         <img id="painting-1" src ="art/casual-dva.jpg">
-        <img id="painting-2" src ="">
-        <img id="painting-3" src ="">
-        <img id="painting-4" src ="">
+        <img id="painting-2" src ="art/mario.jpg">
+        <img id="painting-3" src ="art/elderScrolls.jpg">
+        <img id="painting-4" src ="art/newVegas.jpg">
+        <img id="painting-5" src ="art/wow.jpg">
+        <img id="painting-6" src ="art/noMansSky.jpg">
       </a-assets>
 
-      <a-box position="0 4.5 0" rotation="0 45 45" scale="1.5 1.5 1.5" src="#boxTexture">
+      <a-box position="0 3 0" rotation="0 45 45" scale="1.5 1.5 1.5" src="#boxTexture">
         <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
-          to="0 5 0"></a-animation>
-        <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
-        <!-- <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
-        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation> -->
+          to="0 4 0"></a-animation>
+        <!-- <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation> -->
+        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
       </a-box>
 
-      <a-box src="#painting-1" position="0 2 -5" scale="2 2 .1"></a-box>
+      <a-box src="#painting-1" position="0 2 -6" scale="3 2 .1"></a-box>
+      <a-box src="#painting-2" position="5 2 -2" rotation="0 90 0" scale="2 2 .1"></a-box>
+      <a-box src="#painting-3" position="-5 2 -2" rotation="0 90 0" scale="2 2 .1"></a-box>
+      <a-box src="#painting-4" position="-5 2 3" rotation="0 90 0" scale="3 2 .1"></a-box>
+      <a-box src="#painting-5" position="5 2 2" rotation="0 90 0" scale="2 2 .1"></a-box>
+      <a-box src="#painting-6" position="0 2 6" scale="3 2 .1"></a-box>
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
       <a-light type="point" intensity="2" position="2 4 4"></a-light>
